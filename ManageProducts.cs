@@ -22,7 +22,7 @@ namespace YieldDemo
             }
         }
 
-        static IEnumerable<Product> GetProducts(int count)
+        private IEnumerable<Product> GetProducts(int count)
         {
             List<Product> products = new List<Product>();
             for (int i = 0; i < count; i++)
@@ -53,7 +53,7 @@ namespace YieldDemo
                 //    break;
             }
         }
-        static IEnumerable<Product> GetProductsYield(int count)
+        private IEnumerable<Product> GetProductsYield(int count)
         {
             for (int i = 0; i < count; i++)
             {
